@@ -59,5 +59,10 @@ nan_vec <- c(1,2, NaN, NA)
 is.na(nan_vec)
 is.nan(nan_vec)
 
-
-
+## dataframe or tabular data
+df <- data.frame(col1 = 1:2, col2 = c('1','2'))
+df
+c(nrow(df),ncol(df)) # view the number of rows and columns
+data.matrix(df) #convert the dataframe to a matrix
+attributes(df)
+ c(names(df), row.names(df))
